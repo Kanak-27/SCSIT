@@ -301,7 +301,8 @@ marquee{
 .footer .container .footer-items{
     height: 80%;
     width: 30%;
-    padding-right: 50px;
+    padding-right: 1px;
+    margin-right: 50px;
 }
 
 .footer .container .footer-items p{
@@ -310,13 +311,24 @@ marquee{
 }
 .footer .container .footer-items a{
     color: white;
-    text-decoration: none;
+    /* text-decoration: ; */
     display: flex;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
     font-size: 100%;
     &:hover{
         transition: 0.1s;
         color: lightgray;
         font-size: 100.5%;
     }
+}
+.footer-items a{
+    transition-property: text-decoration;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    text-decoration: none;
+}
+
+.footer-items a:hover{
+    text-decoration: underline; 
 }
